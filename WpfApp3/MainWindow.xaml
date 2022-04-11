@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400">
+    <Grid Margin="0,0,-307,0">
+        <TextBox x:Name="eingabe" HorizontalAlignment="Left" Margin="102,83,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Berechnen" HorizontalAlignment="Left" Margin="257,169,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="102,50,0,0" Text="Zahn eingeben:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="102,131,0,0" Text="Doppelter Wert:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="ausgabe" HorizontalAlignment="Left" Margin="102,163,0,0" Text="{Binding Ergebnis}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
